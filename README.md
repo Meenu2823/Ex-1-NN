@@ -70,11 +70,17 @@ print(y_test)
 
 ## OUTPUT:
 ![image](https://github.com/user-attachments/assets/f947c35d-47d6-49a9-ad7e-79d794799b5d)
+
 ![image](https://github.com/user-attachments/assets/f07e16b4-01d5-46fe-ab2d-59bd6bd029ec)
+
 ![image](https://github.com/user-attachments/assets/6d6de0b1-7f0a-4585-8c5e-3b60f5a3a33e)
+
 ![image](https://github.com/user-attachments/assets/0096e36c-fedd-46ca-b87a-a4cac1cfb8ee)
+
 ![image](https://github.com/user-attachments/assets/b65c1fb8-d986-4e65-9d9a-fc794be97ce7)
+
 ![image](https://github.com/user-attachments/assets/7b2ea056-8c96-41d2-83e0-3b7a946ccbb9)
+
 ![image](https://github.com/user-attachments/assets/f94a4308-2913-4db7-ab4e-3bf806ab9f78)
 
 
