@@ -1,7 +1,7 @@
-<H3>ENTER YOUR NAME</H3>
-<H3>ENTER YOUR REGISTER NO.</H3>
-<H3>EX. NO.1</H3>
-<H3>DATE</H3>
+<H3>NAME: Meenu.S</H3>
+<H3>REGISTER NO.: 212223230124</H3>
+<H3>DATE: </H3>
+<H1>EX. NO.1</H1>
 <H1 ALIGN =CENTER> Introduction to Kaggle and Data preprocessing</H1>
 
 ## AIM:
@@ -37,11 +37,46 @@ STEP 5:Normalizing the data<BR>
 STEP 6:Splitting the data into test and train<BR>
 
 ##  PROGRAM:
-TYPE YOUR CODE HERE
+~~~
+from google.colab import files
+import pandas as pd
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+df=pd.read_csv('Churn_Modelling.csv')
+print(df)x=df.iloc[:,:-1].values
+print(x)
+y=df.iloc[:,-1].values
+print(y)
+print(df.isnull().sum())
+numeric_features=df.select_dtypes(include=['number'])
+df.fillna(numeric_features.mean(),inplace=True)
+print(df.isnull().sum())
+y=df.iloc[:,-1].values
+print(y)
+df.duplicated()
+print(df['Balance'].describe())
+scaler=MinMaxScaler()
+df1=pd.DataFrame(scaler.fit_transform(numeric_features))
+print(df1)
+X_train,X_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
+print(X_train)
+print(X_test)
+print(y_train)
+print(y_test)
+~~~
 
 
 ## OUTPUT:
-SHOW YOUR OUTPUT HERE
+![image](https://github.com/user-attachments/assets/f947c35d-47d6-49a9-ad7e-79d794799b5d)
+![image](https://github.com/user-attachments/assets/f07e16b4-01d5-46fe-ab2d-59bd6bd029ec)
+![image](https://github.com/user-attachments/assets/6d6de0b1-7f0a-4585-8c5e-3b60f5a3a33e)
+![image](https://github.com/user-attachments/assets/0096e36c-fedd-46ca-b87a-a4cac1cfb8ee)
+![image](https://github.com/user-attachments/assets/b65c1fb8-d986-4e65-9d9a-fc794be97ce7)
+![image](https://github.com/user-attachments/assets/7b2ea056-8c96-41d2-83e0-3b7a946ccbb9)
+![image](https://github.com/user-attachments/assets/f94a4308-2913-4db7-ab4e-3bf806ab9f78)
+
 
 
 ## RESULT:
