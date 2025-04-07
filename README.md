@@ -6,7 +6,7 @@
 
 ## AIM:
 
-To perform Data preprocessing in a data set downloaded from Kaggle
+To perform Data preprocessing in a data set downloaded from Kaggle.
 
 ## EQUIPMENTS REQUIRED:
 Hardware – PCs
